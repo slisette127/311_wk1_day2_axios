@@ -14,12 +14,18 @@ const discoverMovie = () => {
 const getMovieById = (id) => {
   const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${api_key}`
   // code here
+  return axios(url).then(result.data);
+
 }
 
 const getMovieByIdFailure = () => {
   const fakeId = 1 // FAKE ID HERE
   const url = `https://api.themoviedb.org/3/movie/${fakeId}?api_key=${api_key}`
   // code here
+  return axios(url).then(response(status)
+    .catch(error.response.status)
+  )
+  
 }
 
 
